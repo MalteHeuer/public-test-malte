@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Update dependencies
-        run: scripts/update_dependencies.sh
+        run: scripts/update-dependencies.sh
       - name: Install dependencies
         run: dotnet restore -r win-x64 ScepClient.csproj
       - name: Build
