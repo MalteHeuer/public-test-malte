@@ -23,7 +23,7 @@ jobs:
           tenant-id: a53834b7-42bc-46a3-b004-369735c3acf9 # c4a8.onmicrosoft.com
           client-id: 97676fd8-6001-4096-be4a-fbed37f1355b # from Entra ID app registration
           allow-no-subscriptions: true
-      - name: Update dependencies
+      - name: Update dependenciess
         run: scripts/update-dependencies.sh
       - name: Install dependencies
         run: dotnet restore -r win-x64 ScepClient.csproj
