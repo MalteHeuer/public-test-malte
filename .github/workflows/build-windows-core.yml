@@ -6,11 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  id-token: write # This is required for requesting the JWT
+
 jobs:
   build:
     environment: AzureC4A8CodeSigning
-    permissions:
-      id-token: write # This is required for requesting the JWT
 
     runs-on: ubuntu-latest
 
